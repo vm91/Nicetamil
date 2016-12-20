@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+	<head>	
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="description" content="Nicetamil">
+		<title> Nice Tamil- Happy Family</title>
+		<link rel="stylesheet" type="text/css" href="style.css" title="index">
+	</head>
+<body>
+
+    <script type='text/javascript' src='jwplayer.js'></script>
+<div id='headerb'>
+			<div class="logo">
+				<img src="Images/Logo.PNG" HEIGHT="100" WIDTH="100" alt="Logo"/>
+			</div>
+</div>
+<div id='cssmenu'>
+		<ul>
+			<li><a href='index.php'><span>Main</span></a></li>
+			<li><a href='http://nicetamil.com/chat'><span>LiveChat</span></a></li>
+			<li><a href='forum.php'><span>Forum</span></a></li>
+			<li><a href='news.php'><span>News</span></a></li>
+			<li class='has-sub '><a href='#'><span>Links</span></a>
+			<ul>
+			<li><a href="http://www.surfmusic.de/m3u/geetham-tamil-radio,13704.m3u" target="_blank" title="Standalone Player">	Tamil song live 24/7</a></span></a></li>
+			<li><a href='http://www.onetamilworld.com/'><span>OneTamilWorld</span></a></li>
+			</ul></li>
+			<li><audio controls autoplay>
+  <source src="http://www.geethamradio.com:8020/hifi.mp3" type="audio/mpeg" />
+Your browser does not support the audio element.
+</audio></li>
+	</ul>
+</div>
+
+			
+
+			
+			<script type="text/javascript">
+
+				// Current Server Time script (SSI or PHP)- By JavaScriptKit.com (http://www.javascriptkit.com)
+
+				//Depending on whether your page supports SSI (.shtml) or PHP (.php), UNCOMMENT the line below your page supports and COMMENT the one it does not:
+				//Default is that SSI method is uncommented, and PHP is commented:
+
+				var currenttime = '<!--#config timefmt="%B %d, %Y %H:%M:%S"--><!--#echo var="DATE_LOCAL" -->' //SSI method of getting server date
+				//var currenttime = '<? print date("F d, Y H:i:s", time())?>' //PHP method of getting server date
+
+				///////////Stop editting here/////////////////////////////////
+
+				var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+				var serverdate=new Date(currenttime)
+
+				function padlength(what){
+				var output=(what.toString().length==1)? "0"+what : what
+				return output
+				return output
+				}
+
+				function displaytime(){
+				serverdate.setSeconds(serverdate.getSeconds()+1)
+				var datestring=montharray[serverdate.getMonth()]+" "+padlength(serverdate.getDate())+", "+serverdate.getFullYear()
+				var timestring=padlength(serverdate.getHours())+":"+padlength(serverdate.getMinutes())+":"+padlength(serverdate.getSeconds())
+				document.getElementById("servertime").innerHTML=datestring+" "+timestring
+				}
+
+				window.onload=function(){
+				setInterval("displaytime()", 1000)
+				}
+			</script>
+			
+<br>
+<!--<b>Current Time:</b> <span id="servertime"></span></td><td width="540" align="left"><span style="font-family:Arial, Helvetica, sans-serif; color:#FFFFFF; font-size:11px; font-weight:bold;">NICETAMIL FM</span>&nbsp;
+<script type="text/javascript" src="http://cdn.voscast.com/player/?key=4ce55e9e3a09bf4353c981e3e88b6d52"></script></td><td align="right" background-color:#30576e style="padding-right:10px;"><span style="font-family:Arial, Helvetica, sans-serif; color:#FFFFFF; font-size:11px; font-weight:bold; text-align:right"></span>
+-->
+
+
+<p><br>
+<div id="hoved">
+
+
+</div>
